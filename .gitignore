@@ -1,0 +1,32 @@
+# Model weights (too large for GitHub)
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+uvicorn.log
+
+# Node / Frontend
+node_modules/
+dist/
+.env
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
