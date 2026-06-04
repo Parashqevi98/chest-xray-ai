@@ -1,6 +1,6 @@
 # chest-xray-ai
 
-AI-powered chest X-ray analyzer — classifies 14 pathologies, visualizes predictions with Grad-CAM heatmaps, and audits model fairness.
+AI-powered chest X-ray analyzer: classifies 14 pathologies, visualizes predictions with Grad-CAM heatmaps, and audits model fairness.
 
 ---
 
