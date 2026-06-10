@@ -102,21 +102,21 @@ function Fairness() {
     );
   }
 
-  const { summary, sex, age, intersectional, metadata } = data;
+  const { summary = {}, sex = {}, age = {}, intersectional = {}, metadata } = data;
 
   // ── Sex chart data ─────────────────────────────────────────────────────────
   const sexChartData = LABELS.map((label) => ({
     name: label,
-    Male: sex.male[label] ?? undefined,
-    Female: sex.female[label] ?? undefined,
+    Male: sex.male?.[label] ?? null,
+    Female: sex.female?.[label] ?? null,
   }));
 
   // ── Age chart data ─────────────────────────────────────────────────────────
   const ageChartData = LABELS.map((label) => ({
     name: label,
-    '<40': age['<40'][label] ?? undefined,
-    '40–60': age['40-60'][label] ?? undefined,
-    '>60': age['>60'][label] ?? undefined,
+    '<40': age['<40']?.[label] ?? null,
+    '40–60': age['40-60']?.[label] ?? null,
+    '>60': age['>60']?.[label] ?? null,
   }));
 
   // ── Intersectional table ───────────────────────────────────────────────────
