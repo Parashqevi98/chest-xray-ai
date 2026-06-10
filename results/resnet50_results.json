@@ -1,0 +1,48 @@
+{
+  "model": "resnet50",
+  "auc_test": {
+    "No Finding": 0.850852,
+    "Enlarged Cardiomediastinum": 0.614956,
+    "Cardiomegaly": 0.74534,
+    "Lung Opacity": 0.667858,
+    "Lung Lesion": 0.665046,
+    "Edema": 0.758151,
+    "Consolidation": 0.668827,
+    "Pneumonia": 0.617489,
+    "Atelectasis": 0.625608,
+    "Pneumothorax": 0.724521,
+    "Pleural Effusion": 0.737559,
+    "Pleural Other": 0.686702,
+    "Fracture": 0.656509,
+    "Support Devices": 0.726012,
+    "MEAN_AUC": 0.696102
+  },
+  "auc_gold": {
+    "No Finding": 0.825994,
+    "Enlarged Cardiomediastinum": 0.483083,
+    "Cardiomegaly": 0.754164,
+    "Lung Opacity": 0.810994,
+    "Lung Lesion": null,
+    "Edema": 0.799765,
+    "Consolidation": 0.824966,
+    "Pneumonia": 0.701327,
+    "Atelectasis": 0.707711,
+    "Pneumothorax": 0.602323,
+    "Pleural Effusion": 0.800161,
+    "Pleural Other": null,
+    "Fracture": null,
+    "Support Devices": 0.70741,
+    "MEAN_AUC": 0.7289
+  },
+  "config": {
+    "epochs_p1": 10,
+    "epochs_p2": 20,
+    "lr_p1": 0.001,
+    "lr_p2": 1e-05,
+    "es_patience": 8,
+    "label_smooth": 0.05,
+    "uncertainty": "U-Mixed",
+    "train_n": 50000,
+    "batch": 32
+  }
+}
